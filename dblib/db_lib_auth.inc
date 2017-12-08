@@ -40,7 +40,7 @@ class auth_db
 		{
 			$sql = "SELECT CONCAT(ID, \":\", role, \":\", gID) As uProfile 
 			        FROM users WHERE uname = \"$uname\" and pwd = \"$pw\"";
-		echo $sql;
+		//echo $sql;
 			$query = $this->db->prepare( $sql );
 			$query->execute();
 			$value = $query->fetchColumn();	
