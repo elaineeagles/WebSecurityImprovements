@@ -8,17 +8,17 @@
 		$url = "http://localhost:8090/WAPIv2/model/webapi.php";
 		$get_data = array("qry" => $sid);
 		$data = route($url, "GET", $get_data);
+		include_once("view/form_view.php");
 		
 		include_once("view/sensor_view.php");
 		
-		include_once("view/form_view.php");
 	}
 	else
 	include_once("view/form_view.php");
 
 
 // make some hard coded chart data
-	$cdata = '{
+	/*$cdata = '{
 					  "cols": [
 							{"id":"","label":"sensors","pattern":"","type":"string"},
 							{"id":"","label":"Proportions","pattern":"","type":"number"}
@@ -30,5 +30,6 @@
 							{"c":[{"v":"4","f":null},{"v":7,"f":null}]}
 						  ]
 					}';
-	include_once("view/chart_view.php");
+					*/
+	//include_once("view/chart_view.php");
 ?>
