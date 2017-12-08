@@ -2,8 +2,8 @@
    header("Content-Type:application/json");
    $uname = filter_input(INPUT_POST, 'uname');
    $pw = filter_input(INPUT_POST, 'pw');
-   $uname = '" or ""="';
-   $pw = '" or ""="';
+  // $uname = '" or ""="';
+  // $pw = '" or ""="';
    if (!empty($uname) && !empty($pw))
    {
 		include_once("../dblib/db_lib_auth.inc");
